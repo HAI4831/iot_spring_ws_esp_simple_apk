@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Base config áp dụng cho mọi domain -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <!-- Cho phép sử dụng các CA gốc mặc định -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Cấu hình cụ thể cho các domain (nếu cần thêm tùy chỉnh) -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.0.104</domain>
+        <domain includeSubdomains="true">192.168.237.189</domain>
+    </domain-config>
+</network-security-config>
