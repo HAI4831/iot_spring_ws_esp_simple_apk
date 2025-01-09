@@ -1,3 +1,6 @@
 [submodule "iot_stomp_websocket"]
 	path = iot_stomp_websocket
 	url = https://github.com/spring-guides/gs-messaging-stomp-websocket.git
+[submodule "iot_ws_simple_4"]
+	path = iot_ws_simple_4
+	url = https://github.com/HAI4831/iot_ws_simple.git
